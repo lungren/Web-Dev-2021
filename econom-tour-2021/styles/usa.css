@@ -73,7 +73,7 @@ p {
 
 #table {
     text-align: left;
-    border: 1px solid black;
+    border: 2px solid black;
     border-collapse: collapse;
     box-shadow: 10px 10px 7px #000;
     width: 95%;
