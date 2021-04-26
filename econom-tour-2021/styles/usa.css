@@ -24,6 +24,7 @@ nav {
 body {
     display: inline;
     padding: 100px;
+    overflow-x: hidden;
 }
 
 section {
