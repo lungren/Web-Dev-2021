@@ -3,13 +3,22 @@ header {
     position: fixed;
     background: #fff;
     z-index: 1000;
-    width: 1500px;
+    width: 100%;
 }
 
 nav {
     text-align: center;
-    padding: 20px 0;
+    padding-top: 20px;
     width: 100%;
+}
+
+#infoContactBooking {
+    padding-top: 20px 0;
+}
+
+#infoContactBooking a {
+    margin-top: 10px;
+    padding: 20px 40px;
 }
 
 body {
@@ -35,8 +44,19 @@ aside {
     margin-top: 400px;
 }
 
+#news {
+    text-align: center;
+}
+
+.liga {
+    box-shadow: none;
+    height: 150px;
+    width: 300px;
+}
+
 ul {
     list-style-type: none;
+    margin-top: 40px;
 }
 
 li {
