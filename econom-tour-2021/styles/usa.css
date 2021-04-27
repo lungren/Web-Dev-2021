@@ -1,7 +1,8 @@
 header {
     text-align: center;
     position: fixed;
-    background: #fff;
+    background-image: url(../images/usa/usa_trip.jpg);
+    background-size: auto 270px;
     z-index: 1000;
     width: 100%;
 }
@@ -10,6 +11,11 @@ nav {
     text-align: center;
     padding-top: 20px;
     width: 100%;
+}
+
+nav a {
+    font-size: 20pt;
+    color: rgb(167, 241, 48);
 }
 
 #infoContactBooking {
