@@ -1,0 +1,116 @@
+header {
+    text-align: center;
+    position: fixed;
+    background-image: url(../images/argentina/tours_Argentina.jpg);
+    background-size: auto 300px;
+    background-repeat: repeat-x;
+    opacity: 100%;
+    z-index: 1000;
+    width: 100%;
+}
+
+nav {
+    text-align: center;
+    padding-top: 20px;
+    width: 100%;
+}
+
+nav a {
+    font-size: 20pt;
+    color: rgb(247, 9, 9);
+}
+
+#infoContactBooking {
+    padding-top: 20px 0;
+}
+
+#infoContactBooking a {
+    margin-top: 10px;
+    padding: 20px 40px;
+}
+
+body {
+    display: inline;
+    padding: 100px;
+    overflow-x: hidden;
+}
+
+#description {
+    margin-top: 10px;
+}
+
+section {
+    display: block;
+    float: left;
+    padding-left: 20px;
+    width: 1200px;
+}
+
+article {
+    margin-top: 280px;
+}
+
+aside {
+    display: block;
+    float: right;
+    width: 20%;
+    margin-top: 400px;
+}
+
+#news {
+    text-align: center;
+}
+
+.liga {
+    box-shadow: none;
+    height: 150px;
+    width: 300px;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 40px;
+}
+
+li {
+    font-size: 14pt;
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+p {
+    padding-bottom: 10px;
+    text-indent: 20px;
+    text-align: justify;
+}
+
+#table {
+    text-align: left;
+    border: 2px solid black;
+    border-collapse: collapse;
+    box-shadow: 10px 10px 7px #000;
+    width: 95%;
+}
+
+th,
+td {
+    border: 1px solid black;
+}
+
+img {
+    box-shadow: 10px 10px 7px #000;
+}
+
+#manufacture {
+    margin-bottom: 20px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    background: #fff;
+    color: rgb(12, 10, 12);
+    width: 100%;
+}
