@@ -41,31 +41,60 @@ nav a {
 }
 
 body {
-    display: inline;
-    padding: 100px;
+    display: inline-block;
     overflow-x: hidden;
 }
 
-section {
-    display: block;
-    float: left;
-    padding-left: 20px;
-    width: 1200px;
+.bookingTour {
+    display: inline-block;
+    padding-top: 300px;
+    width: 70%;
 }
 
-article {
+#firstBlock {
+    padding-top: 300px;
+}
+
+section {
+    display: inline-block;
+    padding-left: 20px;
+    width: 70%;
+    text-align: left;
+}
+
+.contact {
+    display: block;
+    float: left;
     margin-top: 280px;
+}
+
+#countryInfo {
+    display: inline;
+    margin-top: 280px;
+    float: left;
+}
+
+.countryBlock {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 20px;
 }
 
 aside {
     display: block;
     float: right;
-    width: 20%;
-    margin-top: 400px;
+    margin-right: 0;
+}
+
+.weather {
+    display: block;
+    float: left;
 }
 
 #news {
-    text-align: center;
+    display: block;
+    text-align: start;
 }
 
 .liga {
@@ -76,7 +105,7 @@ aside {
 
 ul {
     list-style-type: none;
-    margin-top: 40px;
+    margin-top: 40px 0;
 }
 
 li {
@@ -91,21 +120,9 @@ p {
     text-align: justify;
 }
 
-#table {
-    text-align: left;
-    border: 2px solid black;
-    border-collapse: collapse;
+.source img {
     box-shadow: 10px 10px 7px #000;
-    width: 95%;
-}
-
-th,
-td {
-    border: 1px solid black;
-}
-
-img {
-    box-shadow: 10px 10px 7px #000;
+    size: 70px 50px;
 }
 
 #manufacture {
@@ -120,5 +137,5 @@ footer {
     background: #fff;
     color: rgb(12, 10, 12);
     width: 100%;
-    margin-top: 10;
+    margin-top: 20px;
 }
