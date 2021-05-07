@@ -43,6 +43,7 @@ nav a {
 body {
     display: inline-block;
     overflow-x: hidden;
+    padding-bottom: 50px;
 }
 
 .bookingTour {
@@ -137,5 +138,5 @@ footer {
     background: #fff;
     color: rgb(12, 10, 12);
     width: 100%;
-    margin-top: 20px;
+    margin-top: 50px;
 }
