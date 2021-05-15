@@ -76,14 +76,241 @@
 
         <div class="col-md-8">
             <article>
-                <b>Заявка на тур</b></article>
-            <div>
+                <div class="col-md-12 col-md-offset-3">
+                    <b>Заявка на тур/Контактная информация</b>
+                    <p> (все данные заполнять на русском или украинском языке)</p>
+                </div>
+            </article>
+            <div class="row">
+                <div class="form-group col-md-12">
+
+                    <div class="form-group col-md-6">
+
+                        <label for="name" class="control-label col-md-12 col-md-push-3">Имя:</label><br>
+
+                        <div class="col-md-12 col-md-pull-2">
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Укажите Ваше имя" />
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+
+                        <label for="secondName" class="control-label col-md-12 col-md-push-5">Отчество:</label>
+
+                        <div class="col-md-12">
+                            <input type="text" name="name" id="secondName" class="form-control" placeholder="Укажите Ваше отчество" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-12">
+
+                        <div class="form-group col-md-6">
+
+                            <label for="surname" class="control-label col-md-12 col-md-push-2">Фамилия:</label>
+
+                            <div class="col-md-12 col-md-pull-2">
+                                <input type="text" name="name" id="Surname" class="form-control" placeholder="Укажите Вашу фамилию" />
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+
+                            <label for="secondName" class="control-label col-md-12 col-md-push-4">Компания:</label>
+
+                            <div class="col-md-12">
+                                <input type="text" name="name" id="company" class="form-control" placeholder="Укажите Вашу компанию" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-12">
+
+                        <div class="form-group col-md-6">
+
+                            <label for="name" class="control-label col-md-12 col-md-push-2">Мобильный::</label><br>
+
+                            <div class="col-md-12 col-md-pull-2">
+                                <input type="text" name="phoneNumber" id="mobil" class="form-control" placeholder="Укажите Ваш мобильный номер" />
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+
+                            <label for="secondName" class="control-label col-md-12 col-md-push-5">Email:</label>
+
+                            <div class="col-md-12">
+                                <input type="text" name="name" id="email" class="form-control" placeholder="Укажите Ваш email" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row"></div>
+                <div class="form-group col-md-12">
+
+                    <label for="name" class="control-label col-md-12 col-md-push-6">Ваш адрес::</label>
+
+                    <div class="col-md-12">
+                        <input type="text" name="phoneNumber" id="address" class="form-control" placeholder="Укажите Ваш адрес" />
+                    </div>
+                </div>
+            </div>
+            <article>
+                <div class="col-md-12 col-md-offset-4">
+                    <b>Детали тура</b>
+                </div>
+                <div>
+                    <p> (укажите тип тура, кол-во пассажиров, пункт отправления и прибытия, даты, желаемый отель, тип номера, тип питания)</p>
+                </div>
+            </article>
+
+            <div class="row">
+                <div class="form-group col-md-12">
+
+                    <div class="form-group col-md-6">
+
+                        <label for="text" class="control-label col-md-12 col-md-push-3">Тип тура:</label><br>
+
+                        <div class="col-md-12 col-md-pull-2">
+                            <input type="text" name="typeTrip" id="typeTrip" class="form-control" placeholder="авиатур" />
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+
+                        <label for="budjet" class="control-label col-md-12 col-md-push-2">Ожидаемый бюджет (на человека):</label>
+
+                        <div class="col-md-12">
+                            <input type="text" name="name" id="budjet" class="form-control" placeholder="Укажите бюджет на человека" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-12">
+
+                        <div class="form-group col-md-6">
+
+                            <label for="name" class="control-label col-md-12 col-md-push-3">Отель:</label>
+
+                            <div class="col-md-12 col-md-pull-2">
+                                <input type="text" name="name" id="hotel" class="form-control" placeholder="Укажите отель" />
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+
+                            <label for="typeOfRoom" class="control-label col-md-12 col-md-push-5">Тип номера:</label>
+
+                            <div class="col-md-12">
+                                <input type="text" name="typeOfRoom" id="typeOfRoom" class="form-control" placeholder="Укажите тип номера" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="form-group col-md-12">
+
+                        <label for="text" class="control-label col-md-12 col-md-push-5">Тип питания:</label><br>
+
+                        <div class="col-md-12">
+                            <input type="text" name="food" id="food" class="form-control" placeholder="Укажите тип питания" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-12">
+
+                        <div class="form-group col-md-6">
+
+                            <label for="name" class="control-label col-md-12 col-md-push-3">Взрослых:</label><br>
+
+                            <div class="col-md-12 col-md-pull-2">
+                                <input type="number" name="adult" id="adult" class="form-control" placeholder="Укажите количество взрослых" />
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+
+                            <label for="typeOfRoom" class="control-label col-md-12 col-md-push-5">Детей:</label>
+
+                            <div class="col-md-12">
+                                <input type="number" name="children" id="children" class="form-control" placeholder="Укажите количество детей" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-12">
+
+                        <div class="form-group col-md-6">
+
+                            <label for="name" class="control-label col-md-12 col-md-push-2">Младенцев (до 2 лет):</label><br>
+
+                            <div class="col-md-12 col-md-pull-2">
+                                <input type="number" name="baby" id="baby" class="form-control" placeholder="Укажите количество младенцев" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-12">
+
+                        <div class="form-group col-md-6">
+
+                            <label for="name" class="control-label col-md-12 col-md-push-3">Страна отправления:</label><br>
+
+                            <div class="col-md-12 col-md-pull-2">
+                                <input type="text" name="adult" id="countryDeparture" class="form-control" placeholder="Укажите страну отправления" />
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+
+                            <label for="typeOfRoom" class="control-label col-md-12 col-md-push-5">Пункт отправления:</label>
+
+                            <div class="col-md-12">
+                                <input type="text" name="children" id="pointDeparture" class="form-control" placeholder="Укажите пункт отправления" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-12">
+
+                        <div class="form-group col-md-6">
+
+                            <label for="countryArrival" class="control-label col-md-12 col-md-push-2">Страна прибытия:</label><br>
+
+                            <div class="col-md-12 col-md-pull-2">
+                                <input type="text" name="countryArrival" id="countryArrival" class="form-control" placeholder="Укажите страну прибытия" />
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+
+                            <label for="pointArrival" class="control-label col-md-12 col-md-push-4">Пункт прибытия:</label>
+
+                            <div class="col-md-12">
+                                <input type="text" name="pointArrival" id="pointArrival" class="form-control" placeholder="Укажите пункт прибытия" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-12">
+
+                        <div class="col-md-12">
+                            <label for="exampleFormControlTextarea1" class="col-md-12 col-md-offset-2">Пожелания (индивидуальный трансфер, расположение номера, возможность двигать даты и т.д.):</label>
+                            <div class="col-md-12">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- <div>
                 <form action="send.php" method="post">
                     <input type="text" name="fio" placeholder="Укажите ФИО">
                     <input type="text" name="tel" placeholder="Укажите телефон">
                     <input type="text" name="email" placeholder="Укажите e-mail">
                     <input type="submit" value="Отправить">
                 </form>
+            </div> -->
             </div>
         </div>
 
