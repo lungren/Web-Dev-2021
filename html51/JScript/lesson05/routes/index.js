@@ -3,6 +3,8 @@ var router = express.Router();
 var Book = require('../models/book');
 var Tour = require('../models/tour');
 var Cinema = require('../models/cinema');
+var City = require('../models/city');
+var User = require('../models/user');
 
 /* GET home page. */
 
@@ -37,13 +39,38 @@ router.get('/tours-demo', async(req, res) => {
     }
 });
 
-
 router.get('/cinemas-demo', async(req, res) => {
     try {
         let cinemas = await Cinema.find({});
         res.render('cinemas', {
-            title: 'Кінотетр',
+            title: 'Назва залу',
             cinemas: cinemas
+        });
+    } catch (e) {
+        console.log(e);
+        res.status(500).send(e);
+    }
+});
+
+router.get('/cities-demo', async(req, res) => {
+    try {
+        let cities = await City.find({});
+        res.render('cities', {
+            title: 'Назва програми',
+            cities: cities
+        });
+    } catch (e) {
+        console.log(e);
+        res.status(500).send(e);
+    }
+});
+
+router.get('/users-demo', async(req, res) => {
+    try {
+        let users = await User.find({});
+        res.render('users', {
+            title: 'Користувач',
+            users: users
         });
     } catch (e) {
         console.log(e);
