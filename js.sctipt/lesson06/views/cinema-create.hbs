@@ -1,0 +1,50 @@
+<div class="container">
+
+    <form role="form">
+        <legend>{{title}}</legend>
+        <div class="form-group">
+            <label for="name">Кінотеатр</label>
+            <input type="text" class="form-control" id="name" 
+            placeholder="Red" name="name"
+            value="{{cinemas.name}}">
+        </div>
+
+        <div class="form-group">
+            <label for="rows">Ряд</label>
+            <input type="number" class="form-control" id="rows" placeholder="Ряд" name="rows"
+            value="{{cinemas.rows}}" >
+        </div>
+       
+        <div class="form-group">
+            <label for="cols">Місце</label>
+            <input type="number" class="form-control" id="cols" placeholder="Місце" name="cols"
+            value="{{cinemas.cols}}">
+        </div>
+        <div class="form-group">
+            <label for="__v">Вільні місця</label>
+            <input type="number" class="form-control" id="__v" placeholder="Вільні місця" name="__v"
+            value="{{cinemas.__v}}">
+        </div>
+        <button type="button" class="btn btn-primary" onclick="Save()">Зберегти</button>
+    </form>
+    <script>
+        function Save(){
+            let data = {
+                name: document.getElementById('name').value,
+                rows: document.getElementById('rows').value,
+                cols: document.getElementById('cols').value,
+                __v: document.getElementById('__v').value,
+                //isPresent: document.getElementById('isPresent').value
+            }         
+            fetch("/cinema/", {
+                method:'POST',
+                cache:'no-cache',
+                headers: {
+                    'content-type':'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then(d=>window.location='/cinemas')
+            .catch(err=>alert(err));
+        }
+</script>

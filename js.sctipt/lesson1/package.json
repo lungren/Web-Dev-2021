@@ -1,0 +1,16 @@
+{
+    "name": "lesson1",
+    "version": "1.0.0",
+    "description": "first experience",
+    "main": "demo01.js",
+    "scripts": {
+        "start": "node demo01.js",
+        "debug": "nodemon demo01.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Revutsky Andriy",
+    "license": "ISC",
+    "devDependencies": {
+        "nodemon": "^2.0.7"
+    }
+}

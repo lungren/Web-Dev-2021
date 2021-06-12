@@ -1,0 +1,49 @@
+
+
+<div class="container">
+    
+    <div class="row">
+        <div class="col-md-3">
+            <h1>{{title}}</h1>
+        </div>
+    </div>
+       <div class="row">    
+            <div class="col-md-3">
+            <form action="" method="POST" class="form-inline" role="form">
+            
+                <div class="form-group">
+                    <label class="sr-only" for="Countre">Пошук</label>
+                    <input type="email" class="form-control" id="country" placeholder="Україна">
+                </div>
+                <button type="submit" class="btn btn-primary">Пошук</button>
+            </form>
+            </div>
+        </div>     
+        
+    
+    
+<div class="row">
+    <div class="col-md-12">
+<table class="table">
+    <thead>
+        <tr style="background-color: aqua;">
+            <th>Назва програми</th>
+            <th>Країна</th>
+            <th>Район</th>
+            <th>Геометка</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each cities}}
+        <tr>
+            <td>{{name}}</td>
+            <td>{{country}}</td>
+            <td>{{subcountry}}</td>
+            <td>{{geonameid}}</td>
+        </tr>
+        {{/each}}
+        </div>
+        </div>
+        </div>
+    </tbody>
+    </table>

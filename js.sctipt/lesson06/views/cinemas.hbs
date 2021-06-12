@@ -1,0 +1,29 @@
+<div class="container">
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h1>{{title}}</h1>
+            <a class="btn btn-success" href="/cinema-create">Створити</a>
+            <table class="table">
+                <thead>
+                    <tr style="background-color: aqua;">
+                        <th>Кінотеатр</th>
+                        <th>Ряд</th>
+                        <th>Місце</th>
+                        <th>Вільні місця</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each cinemas}}
+                    <tr>
+                        <td>{{name}}</td>
+                        <td>{{rows}}</td>
+                        <td>{{cols}}</td>
+                        <td>{{__v}}</td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
